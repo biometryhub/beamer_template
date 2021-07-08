@@ -1,0 +1,62 @@
+% Beamer template for nicely-presented Biometry Hub talks.
+%
+% Code author: Russell A. Edson, Biometry Hub
+% Date last modified: 08/07/2021
+
+\documentclass{beamer}
+
+% Use \color{bhblue} for the Biometry Hub blue colour, and use
+% \begin{slide} ... \end{slide} for slides with the coloured
+% orb backgrounds.
+\usepackage{bhslide}
+
+\usepackage{microtype}
+\usepackage{multimedia}
+\usepackage{graphicx}
+\fboxsep=0pt
+\usepackage{parskip}
+\usepackage{amsmath}
+\usepackage{amssymb}
+%\usepackage{inconsolata}
+\usepackage{url}
+\let\harvardurl\url
+%\usepackage{pgfplots}
+%\pgfplotsset{compat=newest}
+%\usepackage{listings}
+%\lstset{%
+%  basicstyle=\footnotesize\ttfamily,
+%  keywordstyle=\footnotesize\ttfamily, 
+%  language=R
+%}
+
+% Biblatex for references
+\usepackage[backend=bibtex]{biblatex}
+\bibliography{\jobname}
+
+
+% Title page and 'short' versions (which appear on the bottom bar on
+% every slide)
+\title[Beamer template]{A beamer template for talks/presentations}
+\author[My Name]{My Long Name}
+\institute[My institute]{My long institute that appears only on the title page}
+\date[\today]{\today}
+
+\begin{document}
+	% Slide 1: Title slide 
+	\begin{slide}
+		\titlepage
+	\end{slide}
+	
+	% Slide 2, etc.
+	\begin{slide}
+	  \frametitle{Second slide}
+    For example\footnote[frame]{\fullcite{Eg21}}. 
+    Use {\color{bhblue}\verb|\color{bhblue}|} for theme-coloured text.
+    
+    \begin{itemize}
+      \item Then \LaTeX\ as usual
+      \item etc.
+    \end{itemize}    	  
+	\end{slide}
+	
+\end{document}

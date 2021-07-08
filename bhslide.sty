@@ -1,0 +1,27 @@
+% Biometry Hub slide style for pretty presentations.
+%
+% Code author: Russell A. Edson, Biometry Hub
+% Date last modified: 08/07/2021
+
+% Beamer: Boadilla theme
+\usetheme{Boadilla}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{itemize items}[default]
+\setbeamertemplate{enumerate items}[default]
+
+% Biometry Hub 'orbs' and colouring for each slide
+\definecolor{bhblue}{HTML}{00adc0}
+\setbeamercolor{structure}{fg=bhblue!75!black}
+
+% Tweak: No 'Figure: ' prefix in captions
+\setbeamertemplate{caption}{\raggedright\insertcaption\par}
+
+% New environment for Slides
+% Every slide has the Biometry Hub design background
+\newenvironment{slide}{%
+  \usebackgroundtemplate{%
+	  \includegraphics[%
+		  width=1.08\textwidth, 
+		  height=1.02\textheight, 
+		  trim={0 0 0 0cm}]{biometryhub_simple_transparent.png}}
+	\begin{frame}[containsverbatim]}{\end{frame}}
