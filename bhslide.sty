@@ -1,7 +1,7 @@
 % Biometry Hub slide style for pretty presentations.
 %
 % Code author: Russell A. Edson, Biometry Hub
-% Date last modified: 24/08/2021
+% Date last modified: 10/09/2021
 
 % Beamer: Boadilla theme
 \usetheme{Boadilla}
@@ -18,10 +18,12 @@
 
 % New environment for Slides
 % Every slide has the Biometry Hub design background
+% 10/09/2021 Update: We can use a 16x9 aspect ratio so that it looks
+%                    better on modern screens.
 \newenvironment{slide}{%
   \usebackgroundtemplate{%
     \includegraphics[%
-      width=1.08\textwidth, 
-      height=1.02\textheight, 
-      trim={0 0 0 0cm}]{biometryhub_simple_transparent.png}}
+      width=1.055\textwidth, 
+      height=1.055\textheight, 
+      trim={0cm 0 0 0cm}]{biometryhub_simple_transparent_16x9.jpg}}
   \begin{frame}[fragile, environment=slide]}{\end{frame}}
